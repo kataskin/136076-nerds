@@ -5,92 +5,187 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header>
-      <img src="http://placehold.it/50x50" alt="nerd's">
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="#">Студия</a>
-          </li>
-          <li>
-            <a href="#">Клиенты</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <a href="#">Корзина</a>
-      </nav>
-      <div class="title">
-        <h1>Добро пожаловать в магазин готовых макетов</h1>
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="http://placehold.it/50x50" alt="nerd's" width="50" height="50">
+        </a>
+        <nav class="main-navigation">
+          <ul class="navigation">
+            <li>
+              <a href="#" class="navigation-item">Студия</a>
+            </li>
+            <li>
+              <a href="#" class="navigation-item">Клиенты</a>
+            </li>
+            <li>
+              <a href="#" class="navigation-item">Магазин</a>
+            </li>
+            <li>
+              <a href="#" class="navigation-item">Контакты</a>
+            </li>
+          </ul>
+          <a href="#" class="navigation-item basket">Корзина</a>
+        </nav>
+        <div class="title">
+          <h1>Добро пожаловать в магазин готовых макетов</h1>
+        </div>
       </div>
     </header>
-    <main>
+    <main class="container">
       <div class="left-column">
         <form action="#">
-          <label>Стоимость:</label><br>
-            <input><br>
-          <label>Сетка:</label><br>
-            <input type="radio" name="grid" value="adaptive" id="adaptive">
-            <label for="adaptive">Адаптивная</label><br>
-            <input type="radio" name="grid" value="fixed" id="fixed">
-            <label for="fixed">Фиксированная</label><br>
-            <input type="radio" name="grid" value="rubber" id="rubber">
-            <label for="rubber">Резиновая</label><br>
-          <label>Особенности:</label><br>
-            <input type="checkbox" id="slider">
-            <label for="slider">Слайдер</label><br>
-            <input type="checkbox" id="advantage">
-            <label for="advantage">Блок преимуществ</label><br>
-            <input type="checkbox" id="news">
-            <label for="news">Новости</label><br>
-            <input type="checkbox" id="gallery">
-            <label for="gallery">Галерея</label><br>
-            <input type="checkbox" id="basket">
-            <label for="basket">Корзина</label><br>
-          <input type="submit" value="Показать">
+          <div class="filter">
+            <h3>Стоимость:</h3>
+          </div>
+          <input><!-- Здесь пока непонятно что -->
+          <div class="price-limit"
+          <div class="filter">
+            <h3>Сетка:</h3>
+            <ul class="filter-item">
+              <li>
+                <input type="radio" name="grid" value="adaptive" id="adaptive">
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="fixed" id="fixed">
+                <label for="fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" value="rubber" id="rubber">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter">
+            <h3>Особенности:</h3>
+            <ul class="filter-item">
+              <li>
+                <input type="checkbox" id="slider" name="features">
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" id="advantage" name="features">
+                <label for="advantage">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" id="news" name="features">
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" id="gallery" name="features">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" id="basket">
+                <label for="basket">Корзина</label>
+              </li>
+            </ul>
+          </div>
+          <input type="submit" value="Показать" class="show">
         </form>
       </div>
       <div class="right-column">
         <div class="sort">
-          <p>Сортировать:</p>
+          <span>Сортировать:</span>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По функционалу</li>
+            <li>
+              <a href="#" class="sort-item">По цене</a>
+            </li>
+            <li>
+              <a href="#" class="sort-item">По типу</a>
+            </li>
+            <li>
+              <a href="#" class="sort-item">По функционалу</a>
+            </li>
           </ul>
+          <div class="down">
+            <!-- Это будет стрелка вниз -->
+          </div>
+          <div class="up">
+            <!-- Это будет стрелка вверх -->
+          </div>
         </div>
-        <div class="switch">
-        </div>
-        <ul>
+        <ul class="products">
           <li>
-            <img src="http://placehold.it/50x50" alt="AVIATOR">
+            <div class="top-element">
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/50x50" alt="AVIATOR">
+              <div class="hover">
+                <h3>AVIATOR</h3>
+                <p>Одностраничный макет с авторским дизайном</p>
+                <a href="#" class="buy-btn">8000 р.</a>
+              </div>
+            </div>
           </li>
           <li>
-            <img src="http://placehold.it/50x50" alt="SUNSET">
+            <div class="top-element">
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/50x50" alt="SUNSET">
+              <div class="hover">
+                <h3>Sunset</h3>
+                <p>Интернет-магазин с личным кабинетом</p>
+                <a href="#" class="buy-btn">10000 р.</a>
+              </div>
+            </div>
           </li>
           <li>
-            <img src="http://placehold.it/50x50" alt="FORTE">
+            <div class="top-element">
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/50x50" alt="FORTE">
+              <div class="hover">
+                <h3>FORTE</h3>
+                <p>Отличный макет для личного блога</p>
+                <a href="#" class="buy-btn">5000 р.</a>
+              </div>
+            </div>
           </li>
           <li>
-            <img src="http://placehold.it/50x50" alt="MOT">
+            <div class="top-element">
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/50x50" alt="MOT">
+              <div class="hover">
+                <h3>Modern Organic THAI</h3>
+                <p>Сайт для ресторана быстрого питания</p>
+                <a href="#" class="buy-btn">12000 р.</a>
+              </div>
+            </div>
           </li>
           <li>
-            <img src="http://placehold.it/50x50" alt="AVENUE">
+            <div class="top-element">
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/50x50" alt="AVENUE">
+              <div class="hover">
+                <h3>AVENUE</h3>
+                <p>Макет для блога о путешествиях</p>
+                <a href="#" class="buy-btn">8000 р.</a>
+              </div>
+            </div>
           </li>
           <li>
-            <img src="http://placehold.it/50x50" alt="DOVETAIL">
+            <div class="top-element">
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/50x50" alt="DOVETAIL">
+              <div class="hover">
+                <h3>DOVETAIL</h3>
+                <p>Интернет-магазин с галереей товаров</p>
+                <a href="#" class="buy-btn">14000 р.</a>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
-      <div class="page">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Следующая</a>
+      <div class="pages">
+        <div class="active-page">1</div>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">Следующая</a>
       </div>
       <div class="contacts">
         <div class="contacts-detail">
@@ -105,15 +200,36 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="social">
-        <a href="#" class="social-network vkontakte">ВКонтакте</a>
-        <a href="#" class="social-network facebook">Фэйсбук</a>
-        <a href="#" class="social-network instagram">Инстаграм</a>
-      </div>
-      <div class="friendship">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="container">
+        <div class="social">
+          <a href="#" class="social-network vkontakte">ВКонтакте</a>
+          <a href="#" class="social-network facebook">Фэйсбук</a>
+          <a href="#" class="social-network instagram">Инстаграм</a>
+        </div>
+        <div class="friendship">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
+    <div class="transparent-background">
+      <div class="popap">
+        <form action="#">
+          <label>
+            <h5>Ваше имя:</h5>
+            <input type="text" placeholder="Представьтесь, пожалуйста">
+          </label>
+          <label>
+            <h5>Ваш e-mail:</h5>
+            <input type="email" placeholder="Для отправки ответа">
+          </label>
+          <label>
+            <h5>Текст письма:</h5>
+            <textarea placeholder="В свободной форме"></textarea>
+          </label>
+          <input type="submit" value="Отправить" class="btn">
+        </form>
+      </div>
+    </div>
   </body>
 </html>

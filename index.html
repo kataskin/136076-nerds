@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <div class="container">
         <div class="logo">
           <img src="http://placehold.it/50x50" alt="nerd's" width="50" height="50">
@@ -125,14 +125,20 @@
       </div>
       <div class="content-box">
 <!-- Нужно ли делать отдельные дивы для каждого изображения? -->
-        <div class="logo">
-          <img src="http://placehold.it/50x50" alt="GLUKHANKO" width="50" height="50">
+        <div class="client-logo">
+          <a href="#">
+            <img src="http://placehold.it/50x50" alt="GLUKHANKO" width="50" height="50">
+          </a>
         </div>
-        <div class="logo">
-          <img src="http://placehold.it/50x50" alt="HTML Academy" width="50" height="50">
+        <div class="client-logo">
+          <a href="#">
+            <img src="http://placehold.it/50x50" alt="HTML Academy" width="50" height="50">
+          </a>
         </div>
-        <div class="logo">
-          <img src="http://placehold.it/50x50" alt="Borodinski" width="50" height="50">
+        <div class="client-logo">
+          <a href="#">
+            <img src="http://placehold.it/50x50" alt="Borodinski" width="50" height="50">
+          </a>
         </div>
       </div>
       <div class="contacts">
@@ -163,19 +169,13 @@
     <div class="transparent-background">
       <div class="popap">
         <form action="#">
-          <label>
-            <h5>Ваше имя:</h5>
-            <input type="text" placeholder="Представьтесь, пожалуйста">
-          </label>
-          <label>
-            <h5>Ваш e-mail:</h5>
-            <input type="email" placeholder="Для отправки ответа">
-          </label>
-          <label>
-            <h5>Текст письма:</h5>
-            <textarea placeholder="В свободной форме"></textarea>
-          </label>
-          <input type="submit" value="Отправить" class="btn">
+            <h5><label for="user-name">Ваше имя:</label></h5>
+            <input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" class="feed-back">
+            <h5><label for="e-mail">Ваш e-mail:</label></h5>
+            <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" class="feed-back">
+            <h5><label for="message">Текст письма:</label></h5>
+            <textarea name="message" id="message" placeholder="В свободной форме" class="feed-back"></textarea>
+          <input type="submit" value="Отправить" class="btn big-btn">
         </form>
       </div>
     </div>

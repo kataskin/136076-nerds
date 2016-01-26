@@ -12,17 +12,17 @@
         </a>
         <nav class="main-navigation">
           <ul class="navigation">
-            <li>
-              <a href="#" class="navigation-item">Студия</a>
+            <li class="navigation-item">
+              <a href="#">Студия</a>
             </li>
-            <li>
-              <a href="#" class="navigation-item">Клиенты</a>
+            <li class="navigation-item">
+              <a href="#">Клиенты</a>
             </li>
-            <li>
-              <a href="#" class="navigation-item">Магазин</a>
+            <li class="navigation-item">
+              <a href="#">Магазин</a>
             </li>
-            <li>
-              <a href="#" class="navigation-item">Контакты</a>
+            <li class="navigation-item">
+              <a href="#">Контакты</a>
             </li>
           </ul>
           <a href="#" class="navigation-item basket">Корзина</a>
@@ -39,7 +39,6 @@
             <h3>Стоимость:</h3>
           </div>
           <input><!-- Здесь пока непонятно что -->
-          <div class="price-limit"
           <div class="filter">
             <h3>Сетка:</h3>
             <ul class="filter-item">
@@ -99,11 +98,9 @@
               <a href="#" class="sort-item">По функционалу</a>
             </li>
           </ul>
-          <div class="down">
-            <!-- Это будет стрелка вниз -->
-          </div>
-          <div class="up">
-            <!-- Это будет стрелка вверх -->
+          <div class="arrows">
+            <a href="#" class="arrow down"><!-- Это будет стрелка вниз --></a>
+            <a href="#" class="arrow up"><!-- Это будет стрелка вверх --></a>
           </div>
         </div>
         <ul class="products">
@@ -215,19 +212,13 @@
     <div class="transparent-background">
       <div class="popap">
         <form action="#">
-          <label>
-            <h5>Ваше имя:</h5>
-            <input type="text" placeholder="Представьтесь, пожалуйста">
-          </label>
-          <label>
-            <h5>Ваш e-mail:</h5>
-            <input type="email" placeholder="Для отправки ответа">
-          </label>
-          <label>
-            <h5>Текст письма:</h5>
-            <textarea placeholder="В свободной форме"></textarea>
-          </label>
-          <input type="submit" value="Отправить" class="btn">
+            <h5><label for="user-name">Ваше имя:</label></h5>
+            <input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" class="feed-back">
+            <h5><label for="e-mail">Ваш e-mail:</label></h5>
+            <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" class="feed-back">
+            <h5><label for="message">Текст письма:</label></h5>
+            <textarea name="message" id="message" placeholder="В свободной форме" class="feed-back"></textarea>
+          <input type="submit" value="Отправить" class="btn big-btn">
         </form>
       </div>
     </div>

@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <img src="http://placehold.it/50x50" alt="nerd's" width="50" height="50">
+          <img src="img/logo/main-logo.png" alt="nerd's" width="139" height="56">
+        </div>
+        <div class="navigation-item basket clearfix">
+          <a href="#">Корзина</a>
         </div>
         <nav class="main-navigation">
           <ul class="navigation">
@@ -25,136 +29,151 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <a href="#" class="navigation-item basket">Корзина</a>
         </nav>
         <div class="slider">
-          <ul class="slider-list">
-            <li class="slider-item">
-              <div class="short-information">
-                <h2>Долго, дорого, скурпулезно.</h2>
-                <p>
-                  Математически выверенный дизайн для вашего сайта или
-                  мобильного приложения.
-                </p>
-                <a href="#" class="btn big-btn">Узнать больше</a>
-                <img src="http://placehold.it/50x50" alt="Компьютер" width="50" height="50">
-              </div>
-            </li>
-            <li class="slider-item">
-              <div class="short-information">
-                <h2>Любите ли вы математику, как любим ее мы?</h2>
-                <p>
-                  Нашим дизайнерам мы удаляем нейроны, ответственные
-                  за креатив, чтобы дать им возможность все просчитать
-                </p>
-                <a href="#" class="btn big-btn">Узнать больше</a>
-                <img src="http://placehold.it/50x50" alt="Калькулятор" width="50" height="50">
-              </div>
-            </li>
-            <li class="slider-item">
-              <div class="short-information">
-                <h2>Только наркотики, только хардкор!</h2>
-                <p>
-                  Все дизайнерские решения в нашей компании принимаются
-                  только под воздействием качественных галлюциногенов
-                </p>
-                <a href="#" class="btn big-btn">Узнать больше</a>
-                <img src="http://placehold.it/50x50" alt="Робот" width="50" height="50">
-              </div>
-            </li>
-          </ul>
-          <div class="slider-switch">
-
-          </div>
+          <form>
+            <input type="radio" id="slide1" name="slider-switch" value="1" class="for-slide1" checked>
+            <input type="radio" id="slide2" name="slider-switch" value="2" class="for-slide2">
+            <input type="radio" id="slide3" name="slider-switch" value="3" class="for-slide3">
+            <ul class="slider-list">
+              <li class="slider-item">
+                <div class="short-information">
+                  <h2>Долго, дорого,<br>
+                    скрупулезно.</h2>
+                  <p>
+                    Математически выверенный дизайн<br>
+                    для вашего сайта или мобильного приложения.
+                  </p>
+                  <a href="#" class="btn red-btn">Узнать больше</a>
+                </div>
+                <img src="img/other/devices.png" alt="Компьютер" width="338" height="231">
+              </li>
+              <li class="slider-item">
+                <div class="short-information">
+                  <h2>Любите ли вы математику, как любим ее мы?</h2>
+                  <p>
+                    Нашим дизайнерам мы удаляем нейроны, ответственные
+                    за креатив, чтобы дать им возможность все просчитать
+                  </p>
+                  <a href="#" class="btn red-btn">Узнать больше</a>
+                </div>
+                <img src="img/other/calc.png" alt="Калькулятор" width="230" height="249">
+              </li>
+              <li class="slider-item">
+                <div class="short-information">
+                  <h2>Только наркотики,<br>
+                    только хардкор!</h2>
+                  <p>
+                    Все дизайнерские решения в нашей компании принимаются
+                    только под воздействием качественных галлюциногенов
+                  </p>
+                  <a href="#" class="btn red-btn">Узнать больше</a>
+                </div>
+                <img src="img/other/robot.png" alt="Робот" width="333" height="319">
+              </li>
+            </ul>
+            <div class="slider-switch">
+              <label for="slide1" class="slide1"></label>
+              <label for="slide2" class="slide2"></label>
+              <label for="slide3" class="slide3"></label>
+            </div>
+          </form>
         </div>
       </div>
     </header>
-    <main class="container">
-      <ul class="content-box">
-        <li class="service">
-          <img src="http://placehold.it/50x50" alt="Веб-сайты" width="50" height="50">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
-          <a href="#" class="btn red">Заказать</a>
-        </li>
-        <li class="service">
-          <img src="http://placehold.it/50x50" alt="Приложения" width="50" height="50">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#" class="btn green">Заказать</a>
-        </li>
-        <li class="service">
-          <img src="http://placehold.it/50x50" alt="Презентации" width="50" height="50">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="#" class="btn yellow">Заказать</a>
-        </li>
-      </ul>
-      <div class="content-box">
-        <div class="left-column">
-          <div class="info-top">
-            <h2>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h2>
-            <p>
-              Исповедуем принципы минимализма и чистоты. Ставим математический
-              расчет выше креатива. Работаем не покладая рук, как роботы.
-            </p>
+    <main>
+      <div class="container">
+        <ul class="all-services hr">
+          <li class="service">
+            <img src="img/other/web-site.png" alt="Веб-сайты" width="240" height="124">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
+            <a href="#" class="btn red-btn">Заказать</a>
+          </li>
+          <li class="service">
+            <img src="img/other/mobile-site.png" alt="Приложения" width="240" height="124">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#" class="btn green-btn">Заказать</a>
+          </li>
+          <li class="service">
+            <img src="img/other/presentation.png" alt="Презентации" width="240" height="124">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#" class="btn yellow-btn">Заказать</a>
+          </li>
+        </ul>
+        <div class="content-box hr">
+          <div class="column">
+            <div class="info info-left">
+              <h2>Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h2>
+              <p>
+                Исповедуем принципы минимализма и чистоты. Ставим математический
+                расчет выше креатива. Работаем не покладая рук, как роботы.
+              </p>
+            </div>
+            <div class="info info-right">
+              <img src="img/logo/main-logo-big.png" alt="nerd's" width="187" height="75">
+              <div class="gray-line">
+                <h4>Since 2004</h4>
+              </div>
+            </div>
           </div>
-          <div class="info-bottom">
-            <h4 class="uppercase">Выполняем заказы на разработку:</h4>
-            <ul class="list-info">
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
+          <div class="column">
+            <div class="info info-left">
+              <h4>Выполняем заказы на разработку:</h4>
+              <ul class="list-info">
+                <li>Веб-сайтов любой сложности</li>
+                <li>Мобильных приложений для iOS и Android</li>
+                <li>Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
+            </div>
+            <div class="info info-right">
+              <h4>Как мы работаем:</h4>
+              <ul class="list-info">
+                <li>С самоотдачей 146%</li>
+                <li>Соблюдая сроки на 100%</li>
+                <li>По предоплате 50%</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="right-column">
-          <div class="info-top">
-            <img src="http://placehold.it/50x50" alt="nerd's" width="50" height="50">
-            <div class="uppercase lines">Since 2004</div>
+        <div class="all-logos hr">
+          <div class="client-logo">
+            <a href="#">
+              <img src="img/logo/logo-glukhanko.png" alt="GLUKHANKO" width="198" height="37">
+            </a>
           </div>
-          <div class="info-bottom">
-            <h4 class="uppercase">Как мы работаем:</h4>
-            <ul class="list-info">
-              <li>С самоотдачей 146%</li>
-              <li>Соблюдая сроки на 100%</li>
-              <li>По предоплате 50%</li>
-            </ul>
+          <div class="client-logo">
+            <a href="#">
+              <img src="img/logo/logo-htmlacademy.png" alt="HTML Academy" width="199" height="68">
+            </a>
           </div>
-        </div>
-      </div>
-      <div class="content-box">
-<!-- Нужно ли делать отдельные дивы для каждого изображения? -->
-        <div class="client-logo">
-          <a href="#">
-            <img src="http://placehold.it/50x50" alt="GLUKHANKO" width="50" height="50">
-          </a>
-        </div>
-        <div class="client-logo">
-          <a href="#">
-            <img src="http://placehold.it/50x50" alt="HTML Academy" width="50" height="50">
-          </a>
-        </div>
-        <div class="client-logo">
-          <a href="#">
-            <img src="http://placehold.it/50x50" alt="Borodinski" width="50" height="50">
-          </a>
+          <div class="client-logo">
+            <a href="#">
+              <img src="img/logo/logo-borodinski.png" alt="Borodinski" width="209" height="90">
+            </a>
+          </div>
         </div>
       </div>
       <div class="contacts">
-        <div class="contacts-detail">
-          <h4>NЁRDS DESIGN STUDIO</h4>
-          <p>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn big-btn">Напишите нам</a>
+        <div class="map">
+          <div class="container">
+            <div class="contacts-detail">
+              <h4>NЁRDS DESIGN STUDIO</h4>
+              <p>
+                191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8
+              </p>
+              <p>тел. +7 (812) 275-75-75</p>
+              <a href="#" class="btn red-btn">Напишите нам</a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="social">
           <a href="#" class="social-network vkontakte">ВКонтакте</a>
           <a href="#" class="social-network facebook">Фэйсбук</a>
@@ -167,7 +186,7 @@
       </div>
     </footer>
     <div class="transparent-background">
-      <div class="popap">
+      <div class="popup">
         <form action="#">
             <label for="user-name" class="form-legend">Ваше имя:</label>
             <input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" class="feed-back">

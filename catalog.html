@@ -2,14 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>HTML Academy: Нёрдс-каталог</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <a href="#" class="logo">
-          <img src="http://placehold.it/50x50" alt="nerd's" width="50" height="50">
+          <img src="img/logo/main-logo.png" alt="nerd's" width="139" height="56">
         </a>
+        <div class="navigation-item basket">
+          <a href="#">Корзина</a>
+        </div>
         <nav class="main-navigation">
           <ul class="navigation">
             <li class="navigation-item">
@@ -25,167 +30,164 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <a href="#" class="navigation-item basket">Корзина</a>
         </nav>
         <div class="title">
           <h1>Добро пожаловать в магазин готовых макетов</h1>
         </div>
       </div>
     </header>
-    <main class="container">
-      <div class="left-column">
-        <form action="#">
-          <div class="filter">
-            <h3>Стоимость:</h3>
-          </div>
-          <input><!-- Здесь пока непонятно что -->
-          <div class="filter">
-            <h3>Сетка:</h3>
-            <ul class="filter-item">
-              <li>
-                <input type="radio" name="grid" value="adaptive" id="adaptive">
-                <label for="adaptive">Адаптивная</label>
-              </li>
-              <li>
-                <input type="radio" name="grid" value="fixed" id="fixed">
-                <label for="fixed">Фиксированная</label>
-              </li>
-              <li>
-                <input type="radio" name="grid" value="rubber" id="rubber">
-                <label for="rubber">Резиновая</label>
-              </li>
-            </ul>
-          </div>
-          <div class="filter">
-            <h3>Особенности:</h3>
-            <ul class="filter-item">
-              <li>
-                <input type="checkbox" id="slider" name="features">
-                <label for="slider">Слайдер</label>
-              </li>
-              <li>
-                <input type="checkbox" id="advantage" name="features">
-                <label for="advantage">Блок преимуществ</label>
-              </li>
-              <li>
-                <input type="checkbox" id="news" name="features">
-                <label for="news">Новости</label>
-              </li>
-              <li>
-                <input type="checkbox" id="gallery" name="features">
-                <label for="gallery">Галерея</label>
-              </li>
-              <li>
-                <input type="checkbox" id="basket">
-                <label for="basket">Корзина</label>
-              </li>
-            </ul>
-          </div>
-          <input type="submit" value="Показать" class="show">
-        </form>
-      </div>
-      <div class="right-column">
-        <div class="sort">
-          <span>Сортировать:</span>
-          <ul class="sort-list">
-            <li>
-              <a href="#" class="sort-item">По цене</a>
-            </li>
-            <li>
-              <a href="#" class="sort-item">По типу</a>
-            </li>
-            <li>
-              <a href="#" class="sort-item">По функционалу</a>
-            </li>
-          </ul>
-          <div class="arrows">
-            <a href="#" class="arrow down"><!-- Это будет стрелка вниз --></a>
-            <a href="#" class="arrow up"><!-- Это будет стрелка вверх --></a>
-          </div>
+    <main>
+      <div class="container clearfix">
+        <div class="left-column">
+          <form action="#">
+            <div class="filter">
+              <h3>Стоимость:</h3>
+              <div class="price-border">
+                <div class="price-line">
+                  <div class="circle left"></div>
+                  <div class="circle right"></div>
+                </div>
+              </div>
+              <p>От<span>0</span>до<span>15000</span></p>
+            </div>
+            <div class="filter">
+              <h3>Сетка:</h3>
+              <ul class="filter-item">
+                <li>
+                  <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="fixed" id="fixed">
+                  <label for="fixed">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="grid" value="rubber" id="rubber">
+                  <label for="rubber">Резиновая</label>
+                </li>
+              </ul>
+            </div>
+            <div class="filter">
+              <h3>Особенности:</h3>
+              <ul class="filter-item features">
+                <li>
+                  <input type="checkbox" id="slider" name="features" value="slider" checked>
+                  <label for="slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="advantage" name="features" value="advantage">
+                  <label for="advantage">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="news" name="features" value="news" checked>
+                  <label for="news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="gallery" name="features" value="gallery">
+                  <label for="gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="basket" name="features" value="basket">
+                  <label for="basket">Корзина</label>
+                </li>
+              </ul>
+            </div>
+            <button type="submit" name="filter-btn" value="Показать" class="btn filter-btn">Показать</button>
+          </form>
         </div>
-        <ul class="products">
-          <li>
-            <div class="products-item">
-              <img src="http://placehold.it/50x50" alt="AVIATOR">
+        <div class="right-column">
+          <div class="sort">
+            <span>Сортировать:</span>
+            <ul class="sort-list">
+              <li class="sort-item">
+                <a href="#">По цене</a>
+              </li>
+              <li class="sort-item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="sort-item">
+                <a href="#">По функционалу</a>
+              </li>
+            </ul>
+            <div class="arrow down active"></div>
+            <a href="#" class="arrow up"></a>
+          </div>
+          <ul class="products">
+            <li class="products-item">
+              <img src="img/catalog/aviator.jpg" alt="AVIATOR" width="240" height="240">
               <div class="hover">
                 <h3>AVIATOR</h3>
                 <p>Одностраничный макет с авторским дизайном</p>
-                <a href="#" class="buy-btn">8000 р.</a>
+                <a href="#" class="btn red-btn">8000 р.</a>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="products-item">
-              <img src="http://placehold.it/50x50" alt="SUNSET">
+            </li>
+            <li class="products-item">
+              <img src="img/catalog/sunset.jpg" alt="SUNSET" width="240" height="240">
               <div class="hover">
                 <h3>Sunset</h3>
                 <p>Интернет-магазин с личным кабинетом</p>
-                <a href="#" class="buy-btn">10000 р.</a>
+                <a href="#" class="btn red-btn">10000 р.</a>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="products-item">
-              <img src="http://placehold.it/50x50" alt="FORTE">
+            </li>
+            <li class="products-item">
+              <img src="img/catalog/forte.jpg" alt="FORTE" width="240" height="240">
               <div class="hover">
                 <h3>FORTE</h3>
                 <p>Отличный макет для личного блога</p>
-                <a href="#" class="buy-btn">5000 р.</a>
+                <a href="#" class="btn red-btn">5000 р.</a>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="products-item">
-              <img src="http://placehold.it/50x50" alt="MOT">
+            </li>
+            <li class="products-item">
+              <img src="img/catalog/mot.jpg" alt="MOT" width="240" height="240">
               <div class="hover">
                 <h3>Modern Organic THAI</h3>
                 <p>Сайт для ресторана быстрого питания</p>
-                <a href="#" class="buy-btn">12000 р.</a>
+                <a href="#" class="btn red-btn">12000 р.</a>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="products-item">
-              <img src="http://placehold.it/50x50" alt="AVENUE">
+            </li>
+            <li class="products-item">
+              <img src="img/catalog/avenue.jpg" alt="AVENUE" width="240" height="240">
               <div class="hover">
                 <h3>AVENUE</h3>
                 <p>Макет для блога о путешествиях</p>
-                <a href="#" class="buy-btn">8000 р.</a>
+                <a href="#" class="btn red-btn">8000 р.</a>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="products-item">
-              <img src="http://placehold.it/50x50" alt="DOVETAIL">
+            </li>
+            <li class="products-item">
+              <img src="img/catalog/dovetail.jpg" alt="DOVETAIL" width="240" height="240">
               <div class="hover">
                 <h3>DOVETAIL</h3>
                 <p>Интернет-магазин с галереей товаров</p>
-                <a href="#" class="buy-btn">14000 р.</a>
+                <a href="#" class="btn red-btn">14000 р.</a>
               </div>
+            </li>
+          </ul>
+          <div class="pages">
+            <div class="page active-page">1</div>
+            <a href="#" class="page">2</a>
+            <a href="#" class="page">3</a>
+            <a href="#" class="btn">Следующая</a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts inner-page">
+        <div class="map">
+          <div class="container">
+            <div class="contacts-detail">
+              <h4>NЁRDS DESIGN STUDIO</h4>
+              <p>
+                191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8
+              </p>
+              <p>тел. +7 (812) 275-75-75</p>
+              <a href="#" class="btn red-btn">Напишите нам</a>
             </div>
-          </li>
-        </ul>
-      </div>
-      <div class="pages">
-        <div class="active-page">1</div>
-        <a href="#" class="page">2</a>
-        <a href="#" class="page">3</a>
-        <a href="#" class="page">Следующая</a>
-      </div>
-      <div class="contacts">
-        <div class="contacts-detail">
-          <b>NЁRDS DESIGN STUDIO</b>
-          <p>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="btn big-btn">Напишите нам</a>
+          </div>
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="social">
           <a href="#" class="social-network vkontakte">ВКонтакте</a>
           <a href="#" class="social-network facebook">Фэйсбук</a>
@@ -198,7 +200,7 @@
       </div>
     </footer>
     <div class="transparent-background">
-      <div class="popap">
+      <div class="popup">
         <form action="#">
             <label for="user-name" class="form-legend">Ваше имя:</label>
             <input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" class="feed-back">

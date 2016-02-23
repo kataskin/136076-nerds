@@ -65,7 +65,7 @@ body {
   position: relative;
   width: 880px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 160px;
 }
 
 .logo {
@@ -492,7 +492,7 @@ body {
 .contacts-detail {
   position: absolute;
   top: 88px;
-  left: 10px;
+  left: 160px;
   width: 210px;
   padding: 21px;
   background-color: #ffffff;
@@ -716,6 +716,7 @@ input[type=radio]:disabled + label::after {
 .filter-btn {
   width: 156px;
   margin-top: 57px;
+  font-weight: bold;
   color: #000000;
   background-color: #f1f1f1;
   border: none;
@@ -870,12 +871,14 @@ input[type=radio]:disabled + label::after {
   text-transform: uppercase;
 }
 
-.hover p {
+.hover .product-name {
+  display: block;
   margin-bottom: 28px;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   color: #283136;
+  text-decoration: none;
 }
 
 .hover .btn {
@@ -1016,7 +1019,7 @@ input[type=radio]:disabled + label::after {
   margin-top: 10px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: bold;
   color: #283136;
 }
 

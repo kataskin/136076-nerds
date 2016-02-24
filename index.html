@@ -172,6 +172,24 @@
             </div>
           </div>
         </div>
+        <div class="popup">
+          <form action="#">
+            <div class="form-item">
+              <label for="user-name" class="form-legend">Ваше имя:</label><br>
+              <input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" class="feed-back">
+            </div>
+            <div class="form-item">
+              <label for="e-mail" class="form-legend">Ваш e-mail:</label><br>
+              <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" class="feed-back">
+            </div>
+            <div class="form-item-big">
+              <label for="message" class="form-legend">Текст письма:</label>
+              <textarea name="message" id="message" placeholder="В свободной форме" class="feed-back"></textarea>
+            </div>
+            <input type="submit" value="Отправить" class="btn red-btn">
+          </form>
+          <a href="#" class="cross">Закрыть</a>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
@@ -187,19 +205,5 @@
         </div>
       </div>
     </footer>
-    <div class="transparent-background">
-      <div class="popup">
-        <form action="#">
-            <label for="user-name" class="form-legend">Ваше имя:</label>
-            <input type="text" name="user-name" id="user-name" placeholder="Представьтесь, пожалуйста" class="feed-back">
-            <label for="e-mail" class="form-legend">Ваш e-mail:</label>
-            <input type="email" name="e-mail" id="e-mail" placeholder="Для отправки ответа" class="feed-back">
-            <label for="message" class="form-legend">Текст письма:</label>
-            <textarea name="message" id="message" placeholder="В свободной форме" class="feed-back"></textarea>
-          <input type="submit" value="Отправить" class="btn big-btn">
-        </form>
-        <a href="#" class="cross">Крестик</a>
-      </div>
-    </div>
   </body>
 </html>

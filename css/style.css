@@ -140,11 +140,11 @@ body {
   text-transform: uppercase;
 }
 
-.navigation-item a:hover {
+.navigation-item:not(.navigation-item_active) a:hover {
   color: #fb565a;
 }
 
-.navigation-item a:active {
+.navigation-item:not(.navigation-item_active) a:active {
   color: rgba(0, 0, 0, 0.4);
 }
 
